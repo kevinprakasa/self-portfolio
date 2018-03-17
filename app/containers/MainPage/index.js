@@ -16,13 +16,17 @@ import makeSelectMainPage from './selectors';
 import reducer from './reducer';
 import LandingPage from 'components/LandingPage/index';
 import Section from 'components/Section/index';
+import About from 'components/About/index';
+import Projects from 'components/Projects/index';
 export class MainPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
         <StyledMainPage>
           <LandingPage/>
-          <Section title="About"/>
+          <Section title="About Me"><About/></Section>
+          <Section title="Projects"><Projects/></Section>
+
         </StyledMainPage>
       </div>
     );

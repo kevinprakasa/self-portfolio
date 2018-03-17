@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Wallpaper from 'assets/wallpaper.jpg'
+import Wallpaper from 'assets/1511845738428.jpg'
 const StyledLandingPage = styled.div`
 	position:relative;
 	height: 100vh;
@@ -9,7 +9,6 @@ const StyledLandingPage = styled.div`
 	background-repeat: no-repeat;
 	.content{
 		color: ${(props) => props.theme.white};
-		font-family: "Times New Roman", Times, serif;
 		font-size: 1.5em;
 		font-weight: 200;
 		position: absolute;

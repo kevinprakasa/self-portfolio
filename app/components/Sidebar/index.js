@@ -28,9 +28,6 @@ class Sidebar extends React.Component { // eslint-disable-line react/prefer-stat
       				<span><img className="navlogo" src={About}/></span><a href="#">About </a>
       			</div>
       			<div className="navItem">
-      				<span><img className="navlogo" src={Experience}/></span><a href="#"> Experience</a>
-      			</div>
-      			<div className="navItem">
       				<span><img className="navlogo" src={Projects}/></span><a href="#">Projects</a>
       			</div>
       			<div className="navItem">

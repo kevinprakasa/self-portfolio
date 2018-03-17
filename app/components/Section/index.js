@@ -5,14 +5,15 @@
 */
 
 import React from 'react';
-// import styled from 'styled-components';
-
+import StyledSection from './style';
 
 class Section extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-      </div>
+    	<StyledSection>
+    		<div className="secTitle">{this.props.title}</div>
+    		{ this.props.children }
+    	</StyledSection>
     );
   }
 }

@@ -1,13 +1,12 @@
 import styled  from 'styled-components';
 
 const StyledSidebar = styled.div`
-
+@import url('https://fonts.googleapis.com/css?family=Lora');
 .bar {
 	position: fixed;
 	background-color: ${(props) => props.theme.black};
 	color: ${(props) => props.theme.white};
 	height:100vh;
-	font-family: 'Times New Roman';
 	width: 14em ;
 	top: 0;
 	left: 0;
@@ -26,7 +25,7 @@ const StyledSidebar = styled.div`
 	.kplogo {
 		width: 12em;
 		margin: .5em 1em;
-		
+
 	}
 	.navlogo {
 		width: 2em;
