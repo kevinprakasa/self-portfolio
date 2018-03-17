@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledSection = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Lora');
 	background-color: ${(props) => props.theme.bluegrey};
 	height: 100vh;
 	.secTitle {
