@@ -9,7 +9,7 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   body.fontLoaded {

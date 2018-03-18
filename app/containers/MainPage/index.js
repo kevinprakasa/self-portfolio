@@ -19,6 +19,7 @@ import Section from 'components/Section/index';
 import About from 'components/About/index';
 import Projects from 'components/Projects/index';
 import Contact from 'components/Contact/index';
+import Skills from 'components/Skills/index';
 
 export class MainPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
