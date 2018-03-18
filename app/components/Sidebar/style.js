@@ -29,7 +29,11 @@ const StyledSidebar = styled.div`
 	}
 	.navlogo {
 		width: 2em;
-		margin : 0 0.5em;
+		margin: 0 0.5em;
+	}
+	svg {
+		width: 2em;
+		margin: 0 0.5em;
 	}
 
 }

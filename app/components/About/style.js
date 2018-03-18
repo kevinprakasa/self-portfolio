@@ -6,7 +6,7 @@ const  StyledAbout = styled.div`
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 89%;
+	height: 90vh;
 	.blackOpacity {
 		background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 		opacity:0.7;

@@ -18,6 +18,8 @@ import LandingPage from 'components/LandingPage/index';
 import Section from 'components/Section/index';
 import About from 'components/About/index';
 import Projects from 'components/Projects/index';
+import Contact from 'components/Contact/index';
+
 export class MainPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
@@ -26,7 +28,7 @@ export class MainPage extends React.Component { // eslint-disable-line react/pre
           <LandingPage/>
           <Section title="About Me"><About/></Section>
           <Section title="Projects"><Projects/></Section>
-
+          <Section title="Contact"><Contact/></Section>  
         </StyledMainPage>
       </div>
     );

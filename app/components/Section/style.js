@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 const StyledSection = styled.div`
 	background-color: ${(props) => props.theme.bluegrey};
-	height: 100vh;
 	.secTitle {
-		max-height: 11%;
+		max-height: 12vh;
 		font-size: 3.5em;
 		text-align: right;
 		color: ${(props) => props.theme.white};

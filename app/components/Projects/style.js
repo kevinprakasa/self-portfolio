@@ -14,8 +14,7 @@ const StyledProject = styled.div`
 		opacity: 0.7;
 		margin: 2em 1em;
 		background-color: ${(props) => props.theme.white};
-		height: 35em;
-		flex-basis: 30%;
+		flex-basis: 20em;
 		-webkit-box-shadow: -1px 9px 67px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: -1px 9px 67px 0px rgba(0,0,0,0.75);
 		box-shadow: -1px 9px 67px 0px rgba(0,0,0,0.75);
