@@ -1,11 +1,13 @@
 import styled from 'styled-components';
+import nb from 'assets/footer_lodyas.gif';
 const StyledProject = styled.div`
 	display: flex;
 	flex-direction: row;
 	max-width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background-color: ${(props) => props.theme.lightgrey};
+	background-image: url(${nb});
+	background-size: cover;
 	.card {
 		position: relative;
 		bottom: 0;

@@ -7,7 +7,6 @@
 import React from 'react';
 import StyledProject from './style';
 import projects from './projects';
-
 class Projects extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
   	const cards = projects.item.map(pj =>
