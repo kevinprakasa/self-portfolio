@@ -22,7 +22,9 @@ const StyledEducation = styled.div`
 		}
 
 	}
-	
+	@media screen and (max-width: 768px) {
+		padding-bottom: 6em;
+	}
 `;
 
 export default StyledEducation;

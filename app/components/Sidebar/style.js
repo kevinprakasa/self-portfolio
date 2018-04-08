@@ -43,7 +43,7 @@ const StyledSidebar = styled.div`
 			z-index: 100;
 			position: fixed;
 			bottom: 0;
-			width: 100vw;
+			width: 100vw;			
 			height: 4em;
 			
 				.kplogo, .navItem {
