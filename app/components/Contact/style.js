@@ -25,6 +25,12 @@ const StyledEducation = styled.div`
 	@media screen and (max-width: 768px) {
 		padding-bottom: 6em;
 	}
+	@media screen and (max-width: 520px) {
+		font-size: 0.7em;
+	}
+	@media screen and (max-width: 360px) {
+		font-size: 0.5em;
+	}
 `;
 
 export default StyledEducation;
