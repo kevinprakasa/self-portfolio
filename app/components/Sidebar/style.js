@@ -77,6 +77,35 @@ const StyledSidebar = styled.div`
 			}
 		}
 	}
+
+	@media screen and (max-width: 520px) {
+		.bar {
+			height: 3em;
+			.mobileNavbar {
+				.kplogoMob {
+					width: 1.5em;
+				}
+				.navlogo{
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+
+		@media screen and (max-width: 360px) {
+		.bar {
+			height: 2.3em;
+			.mobileNavbar {
+				.kplogoMob {
+					width: 1.3em;
+				}
+				.navlogo{
+					font-size: 1.3em;
+				}
+			}
+		}
+	}
+
 `;
 
 export default StyledSidebar;

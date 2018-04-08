@@ -58,9 +58,11 @@ const StyledLandingPage = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 520px) {
 			.content {
 				top: 20%;
+				left: 50%;
+				transform :translateX(-50%);
 				font-size: 1.1em;
 				#bonjour {
 					font-size: 1.2em;
