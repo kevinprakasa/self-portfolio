@@ -21,11 +21,11 @@ const  StyledAbout = styled.div`
 		flex-direction: column;
 		position: absolute;
 		top: 50%;
-	    left: 40%;
-	    transform: translate(-50%, -50%);
-	    color: ${(props) => props.theme.white};
-	    border-radius: 1em;
-	    font-size: 2em;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: ${(props) => props.theme.white};
+    border-radius: 1em;
+    font-size: 2em;
 		
 		#whoisthis {
 			font-weight: 800;
@@ -43,7 +43,23 @@ const  StyledAbout = styled.div`
 	#frontend {
 		letter-spacing: 0.2em;
 	}
-
+	@media screen and (max-width: 768px) {
+		font-size: 0.7em;
+	}
+	@media screen and (max-width: 650px) {
+		font-size: 0.6em;
+		.aboutContent {
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			width: 95%;
+		}
+		#kplogo {
+			top: 7%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 `;
 
 export default StyledAbout;
