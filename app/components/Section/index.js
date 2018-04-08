@@ -1,25 +1,26 @@
 /**
-*
-* Section
-*
-*/
+ *
+ * Section
+ *
+ */
 
-import React from 'react';
-import StyledSection from './style';
+import React from "react";
+import StyledSection from "./style";
 
-class Section extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  render() {
-    return (
-    	<StyledSection>
-    		<div id={ this.props.id } className="secTitle">{this.props.title}</div>
-    		{ this.props.children }
-    	</StyledSection>
-    );
-  }
+class Section extends React.Component {
+	// eslint-disable-line react/prefer-stateless-function
+	render() {
+		return (
+			<StyledSection>
+				<div id={this.props.id} className="secTitle">
+					{this.props.title}
+				</div>
+				{this.props.children}
+			</StyledSection>
+		);
+	}
 }
 
-Section.propTypes = {
-
-};
+Section.propTypes = {};
 
 export default Section;
