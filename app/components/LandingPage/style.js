@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import Wallpaper from 'assets/1511845738428.jpg'
+import Wallpaper from 'assets/1511845738428.jpg';
+import mobileWallpaper from 'assets/15118457384289.jpg';
 const StyledLandingPage = styled.div`
 	position:relative;
 	height: 100vh;
 	background-image: url(${Wallpaper}) ;
 	background-size: cover;
-	background-position: center center;
+	background-position: 30% 50%;
 	background-repeat: no-repeat;
 	.content{
 		color: ${(props) => props.theme.white};
@@ -37,6 +38,39 @@ const StyledLandingPage = styled.div`
 		height: 100%;
 	}
 
+	@media screen and (max-width: 768px) {
+		background-image: url(${mobileWallpaper});
+		.content {
+			width: 80%;
+			left: 50%;
+			transform :translateX(-50%);
+			margin: 0 auto;
+			font-size: 1.5em;
+			text-align: center;
+
+			#bonjour {
+				font-size: 2em;
+				white-space: nowrap;
+			}
+			#hi {
+				font-size: 2em;
+			}
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+			.content {
+				top: 20%;
+				font-size: 1.1em;
+				#bonjour {
+					font-size: 1.2em;
+					white-space: nowrap;
+				}
+				#hi {
+					font-size: 1.2em;
+				}
+			}
+	}
 
 `;
 
