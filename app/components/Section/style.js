@@ -10,7 +10,14 @@ const StyledSection = styled.div`
 		background-color: ${(props) => props.theme.darkgrey};
 		padding : 0em 1em;
 		text-transform: uppercase;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 
+	@media screen and (max-width: 350px) {
+		.secTitle {
+			font-size: 2em;
+		}
 	}
 `;
 
