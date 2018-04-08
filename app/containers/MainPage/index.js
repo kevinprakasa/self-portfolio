@@ -27,9 +27,9 @@ export class MainPage extends React.Component { // eslint-disable-line react/pre
       <div>
         <StyledMainPage>
           <LandingPage/>
-          <Section title="About Me"><About/></Section>
-          <Section title="Projects"><Projects/></Section>
-          <Section title="Contact"><Contact/></Section>  
+          <Section id="about" title="About Me"><About/></Section>
+          <Section id="project" title="Projects"><Projects/></Section>
+          <Section id="contact" title="Contact"><Contact/></Section>  
         </StyledMainPage>
       </div>
     );

@@ -16,7 +16,7 @@ const StyledLandingPage = styled.div`
 		left: 5em;
 
 		#bonjour {
-			font-size: 4em;
+			font-size: 3em;
 			font-weight: 500;
 			margin: 0;
 		}

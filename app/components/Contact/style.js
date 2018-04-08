@@ -11,9 +11,10 @@ const StyledEducation = styled.div`
 		margin: 0.7em;
 		font-size: 1.2em;
 		color: white;
-		img {
-			width: 4em;
-			margin-right: 2em;
+		svg {
+			margin-right: 0.6em;
+			position: relative;
+			top: 0.25em;
 		}
 		a {
 			text-decoration: none;

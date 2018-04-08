@@ -10,15 +10,15 @@ function Contact() {
   return (
     <StyledContact>
 	    <div>
-	    	<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"></img>
+	    	<i className="fas fa-at" style={{color:'white','font-size': '3em','text-shadow': '1px 1px 1px #ccc'}}></i>
 	    	kevinprakasa03@gmail.com
 	    </div>
 	    <div>
-	    	<img src="https://image.flaticon.com/icons/svg/25/25231.svg"></img>
+	    	<i className="fab fa-github" style={{color:'white','font-size': '3em','text-shadow': '1px 1px 1px #ccc'}}></i>
 	    	<a href="github.com/kevinprakasa">github.com/kevinprakasa</a>
 	    </div>
 	    <div>
-	    	<img src="https://www.shareicon.net/download/2017/06/30/888051_logo.ico"></img>
+	    	<i className="fab fa-linkedin" style={{color:'white','font-size': '3em','text-shadow': '1px 1px 1px #ccc'}}></i>
 	    	<a href="linkedin.com/in/kevin-prakasa">linkedin.com/in/kevin-prakasa</a>
 	    </div>
     </StyledContact>

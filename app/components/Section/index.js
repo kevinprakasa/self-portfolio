@@ -11,7 +11,7 @@ class Section extends React.Component { // eslint-disable-line react/prefer-stat
   render() {
     return (
     	<StyledSection>
-    		<div className="secTitle">{this.props.title}</div>
+    		<div id={ this.props.id } className="secTitle">{this.props.title}</div>
     		{ this.props.children }
     	</StyledSection>
     );
