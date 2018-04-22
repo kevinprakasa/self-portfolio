@@ -29,7 +29,7 @@ const StyledEducation = styled.div`
 		font-size: 0.7em;
 	}
 	@media screen and (max-width: 360px) {
-		font-size: 0.5em;
+		font-size: 0.6em;
 	}
 `;
 

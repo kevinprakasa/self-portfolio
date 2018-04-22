@@ -7,6 +7,7 @@
 import React from "react";
 import StyledLandingPage from "./style";
 import Typed from "typed.js";
+import sr from '../../scrollReveal.js';
 class LandingPage extends React.Component {
 	// eslint-disable-line react/prefer-stateless-function
 	componentDidMount() {
@@ -21,6 +22,15 @@ class LandingPage extends React.Component {
 			cursorChar: "|",
 			autoInsertCss: true
 		};
+    const config = {
+      origin: 'right',
+      duration: 1000,
+      delay: 150,
+      distance: '500px',
+      scale: 1,
+      easing: 'ease',
+    };
+    sr.reveal(this.refs.box1, config);
 		// this.el refers to the <span> in the render() method
 		this.typed = new Typed(this.el, options);
 	}
@@ -31,23 +41,21 @@ class LandingPage extends React.Component {
 		this.typed.destroy();
 	}
 	render() {
-		const options = {
-			strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-			typeSpeed: 40
-		};
 		return (
 			<StyledLandingPage>
 				<div className="blackOpacity" />
 				<div className="content">
-					<span
-						id="bonjour"
-						ref={el => {
-							this.el = el;
-						}}
-					/>
-					<p id="hi">Hi, there! I'm Kevin Prakasa ;)</p>
-					<p>A computer science student at University of Indonesia</p>
-					<p>Currently looking for a summer internship...</p>
+					<div ref='box1'>
+						<span
+							id="bonjour"
+							ref={el => {
+								this.el = el;
+							}}
+						/>
+						<p id="hi">Hi, there! I'm Kevin Prakasa ;)</p>
+						<p>A computer science student at University of Indonesia</p>
+						<p>Currently looking for a summer internship...</p>
+					</div>
 				</div>
 			</StyledLandingPage>
 		);

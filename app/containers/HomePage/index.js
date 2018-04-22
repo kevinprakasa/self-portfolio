@@ -13,15 +13,26 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import Sidebar from 'components/Sidebar/index';
 import MainPage from 'containers/MainPage/index';
+import Loading from 'components/Loading/index';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor() {
+  	super();
+    this.state = { isLoading: true };
+	}
+
+	componentDidMount() {
+		setTimeout(() => this.setState({isLoading: false}), 4500 )
+	   
+	}
   render() {
     return (
-      <div>
-      	<Sidebar/>
-      	<MainPage/>
-      </div>
-
+    	this.state.isLoading ? 
+    	<Loading/> : 
+    	<div>
+    		<Sidebar/>
+    		<MainPage/>
+    	</div>
     );
   }
 }

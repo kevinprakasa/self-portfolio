@@ -69,7 +69,7 @@ class Sidebar extends React.Component {
               <img className="kplogoMob" src={Kplogo} />
             </div>
             <div className="mobileNavItem">
-              <a href="#phone"> <i className="fas fa-phone navlogo"></i></a>
+              <a href="#contact"> <i className="fas fa-phone navlogo"></i></a>
             </div>
             <div className="mobileNavItem">
               <a href="https://drive.google.com/file/d/1I6TCYJxJ4WXUYcaybij5YNZUC_dpdY00/view?usp=sharing"> <i className="fas fa-file-alt navlogo"></i></a>

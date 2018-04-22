@@ -7,10 +7,15 @@
 import React from 'react';
 import StyledProject from './style';
 import projects from './projects';
+import sr from '../../scrollReveal.js';
 class Projects extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  componentDidMount() {
+    sr.reveal('.card');
+  }
+
   render() {
-  	const cards = projects.item.map(pj =>
-				<div className="card">
+  	const cards = projects.item.map((pj,i) =>
+				<div ref='card' className="card">
 				 	<div className="cardImage"><img src={pj.img}></img></div>
 				 	<div className="cardDesc">
 				 		<h3>{pj.title}</h3>
